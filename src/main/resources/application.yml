@@ -19,7 +19,7 @@ zuul:
     eager-load:
       enabled: 
     TrustStore: classpath:keystore.jks
-    TrustStorePassword : password
+    TrustStorePassword : 
 
 eureka:
   client:
@@ -29,6 +29,6 @@ server:
   ssl:
     enabled: true
     key-store: classpath:keystore.jks
-    key-store-password: password
+    key-store-password: 
     key-alias: selfsigned
     keyStoreType: JKS
