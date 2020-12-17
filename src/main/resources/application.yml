@@ -1,12 +1,12 @@
 zuul:
   routes:
-    get:
+    auth:
       path: /auth/**
       url: https://kimixbond-api.herokuapp.com/api/auth
-    links:
+    users:
       path: /users/**
       url: https://kimixbond-api.herokuapp.com/api/users
-    images:
+    base:
       path: /base/**
       url: https://kimixbond-api.herokuapp.com/api
 
