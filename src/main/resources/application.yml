@@ -19,7 +19,7 @@ zuul:
     eager-load:
       enabled: 
     TrustStore: classpath:keystore.jks
-    TrustStorePassword : 
+    TrustStorePassword : digilabs
 
 eureka:
   client:
@@ -29,6 +29,6 @@ server:
   ssl:
     enabled: true
     key-store: classpath:keystore.jks
-    key-store-password: 
+    key-store-password: digilabs
     key-alias: selfsigned
     keyStoreType: JKS
