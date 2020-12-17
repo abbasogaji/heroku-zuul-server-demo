@@ -12,6 +12,9 @@ zuul:
     base:
       path: /base/**
       url: https://kimixbond-api.herokuapp.com/api
+  ribbon:
+    ConnectTimeout: 120000
+    ReadTimeout: 120000
 
 eureka:
   client:
