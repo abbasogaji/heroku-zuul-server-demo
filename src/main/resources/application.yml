@@ -19,17 +19,17 @@ zuul:
     ReadTimeout: 120000
     eager-load:
       enabled: 
-    TrustStore: classpath:keystore.jks
-    TrustStorePassword : password
+    # TrustStore: classpath:keystore.jks
+    # TrustStorePassword : password
 
 eureka:
   client:
     enabled: false
 
-server:
-  ssl:
-    enabled: true
-    key-store: classpath:keystore.jks
-    key-store-password: password
-    key-alias: selfsigned
-    keyStoreType: JKS
+# server:
+#   ssl:
+#     enabled: true
+#     key-store: classpath:keystore.jks
+#     key-store-password: password
+#     key-alias: selfsigned
+#     keyStoreType: JKS
