@@ -1,14 +1,14 @@
 zuul:
   routes:
     get:
-      path: /get/**
-      url: http://httpbin.org/get
+      path: /auth/**
+      url: https://kimixbond-api.herokuapp.com/api/auth
     links:
-      path: /links/**
-      url: http://httpbin.org/links
+      path: /users/**
+      url: https://kimixbond-api.herokuapp.com/api/users
     images:
-      path: /image/**
-      url: http://httpbin.org/image
+      path: /base/**
+      url: https://kimixbond-api.herokuapp.com/api
 
 eureka:
   client:
