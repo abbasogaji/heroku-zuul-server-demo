@@ -8,7 +8,7 @@ zuul:
       url: http://api.chucknorris.io/jokes/random
     users:
       path: /users/**
-      url: http://kimixbond-api.herokuapp.com/api/users
+      url: https://kimixbond-api.herokuapp.com/api/users
     base:
       path: /base/**
       url: http://kimixbond-api.herokuapp.com/api
