@@ -1,5 +1,8 @@
 zuul:
   routes:
+    get:
+      path: /abbas/**
+      url: http://httpbin.org/links
     auth:
       path: /auth/**
       url: https://kimixbond-api.herokuapp.com/api/auth
