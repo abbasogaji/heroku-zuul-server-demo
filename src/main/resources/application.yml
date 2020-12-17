@@ -1,4 +1,5 @@
 zuul:
+  sslHostnameValidationEnabled: false
   routes:
     abbas:
       path: /abbas/**
