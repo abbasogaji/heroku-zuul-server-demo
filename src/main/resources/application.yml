@@ -29,6 +29,6 @@ server:
   ssl:
     enabled: true
     key-store: classpath:keystore.jks
-    key-store-password: digilabs
+    key-store-password: password
     key-alias: selfsigned
     keyStoreType: JKS
