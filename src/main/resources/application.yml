@@ -1,30 +1,30 @@
-zuul:
-  sslHostnameValidationEnabled: false
-  routes:
-    abbas:
-      path: /abbas/**
-      url: http://httpbin.org/get
-    auth:
-      path: /jokes/**
-      url: http://api.chucknorris.io/jokes/random
-    users:
-      path: /users/**
-      url: https://kimixbond-api.herokuapp.com/api/users
-    base:
-      path: /base/**
-      url: http://kimixbond-api.herokuapp.com/api
-  ribbon:
-    ConnectTimeout: 120000
-    isSecure: true
-    ReadTimeout: 120000
-    eager-load:
-      enabled: 
-    # TrustStore: classpath:keystore.jks
-    # TrustStorePassword : password
+# zuul:
+#   sslHostnameValidationEnabled: false
+#   routes:
+#     abbas:
+#       path: /abbas/**
+#       url: http://httpbin.org/get
+#     auth:
+#       path: /jokes/**
+#       url: http://api.chucknorris.io/jokes/random
+#     users:
+#       path: /users/**
+#       url: https://kimixbond-api.herokuapp.com/api/users
+#     base:
+#       path: /base/**
+#       url: http://kimixbond-api.herokuapp.com/api
+#   ribbon:
+#     ConnectTimeout: 120000
+#     isSecure: true
+#     ReadTimeout: 120000
+#     eager-load:
+#       enabled: 
+#     # TrustStore: classpath:keystore.jks
+#     # TrustStorePassword : password
 
-eureka:
-  client:
-    enabled: false
+# eureka:
+#   client:
+#     enabled: false
 
 # server:
 #   ssl:
@@ -33,3 +33,14 @@ eureka:
 #     key-store-password: password
 #     key-alias: selfsigned
 #     keyStoreType: JKS
+
+zuul:
+  routes:
+    my-service:
+      path: /my-service/**
+      serviceId: my-service
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URL:http://user:password@localhost:5000}/eureka/
